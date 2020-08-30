@@ -1,0 +1,60 @@
+$theme-color: #95989a;
+
+.selected-city {
+  position: relative;
+  border-bottom: 1px solid #{$theme-color};
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 67px;
+    padding-bottom: 54px;
+  }
+
+  &__temperature {
+    margin-bottom: 12px;
+    font: {
+      weight: bold;
+      size: 38px;
+    }
+    text-align: center;
+  }
+
+  &__location {
+    margin-bottom: 40px;
+    font: {
+      size: 20px;
+    }
+
+    &-city-name {
+      text-align: center;
+    }
+
+    &-country {
+      text-align: center;
+    }
+
+    &-additional {
+      font: {
+        weight: bold;
+        size: 18px;
+      }
+      text-align: center;
+    }
+  }
+
+  &__add-button {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    font: {
+      size: 40px;
+    }
+    text-align: center;
+    border: 3px solid #{$theme-color};
+    border-radius: 50%;
+  }
+}

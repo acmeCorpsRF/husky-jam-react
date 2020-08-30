@@ -1,0 +1,44 @@
+$theme-color: #95989a;
+
+.default {
+
+  &__block {
+    padding: 14px 151px 14px 185px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    font: {
+      size: 34px;
+    }
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: left;
+    }
+
+    &-item {
+      float: left;
+      max-width: 282px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 25px;
+      border: 1px solid #{$theme-color};
+
+      &-link {
+        display: block;
+        text-align: center;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

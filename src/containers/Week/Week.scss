@@ -1,0 +1,52 @@
+$theme-color: #95989a;
+
+.week {
+
+  &__block {
+    padding: 24px 48px 24px 104px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font: {
+      size: 34px;
+    }
+  }
+
+  &__days-week {
+    margin-bottom: 52px;
+    font: {
+      size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    &-item {
+      flex: 1;
+      max-width: 221px;
+      border: 1px solid #{$theme-color};
+
+      &-link {
+        position: relative;
+        display: block;
+        padding: 25px;
+        text-align: center;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &__day-date {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+}

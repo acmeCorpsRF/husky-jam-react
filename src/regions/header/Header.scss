@@ -1,0 +1,69 @@
+$theme-color: #95989a;
+
+.header {
+  border-bottom: 1px solid #{$theme-color};
+
+  &__link {
+    display: inline-block;
+    margin-top: 5px;
+    font: {
+      size: 22px;
+    }
+  }
+
+  &__link:first-child {
+    margin-right: 59px;
+  }
+
+  &__link:nth-child(2) {
+    margin-right: 67px;
+  }
+
+  &__form {
+    float: right;
+    width: 371px;
+
+    &-input {
+      width: 100%;
+      padding: 5px 14px;
+      font: {
+        size: 22px;
+      }
+      line-height: 22px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #{$theme-color};
+
+      &.error {
+        border-color: red;
+      }
+
+      &.found {
+        border-color: green;
+      }
+    }
+
+    &-show-message {
+      width: 100%;
+      padding: 5px 14px;
+      line-height: 22px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #{$theme-color};
+      background-color: #ffffff;
+
+      &.visible {
+        display: block;
+
+        &:hover {
+          background-color: lighten(green, 70%);
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+}
